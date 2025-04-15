@@ -1,18 +1,18 @@
 import React from 'react';
-import '../assets/styles/EligibilityCriteria.css';
+import { Card } from 'react-bootstrap';
 
-const EligibilityCriteria = () => {
-  return (
-    <div className="eligibility-box">
-      <h3 className="text-center mb-3">Eligibility Criteria</h3>
-      <ul className="list-group list-group-flush">
-        <li className="list-group-item">Minimum 2 years of professional experience</li>
-        <li className="list-group-item">Monthly income above ₹30,000</li>
-        <li className="list-group-item">Must be an Indian citizen</li>
-        <li className="list-group-item">Good credit history</li>
+const EligibilityCriteria = () => (
+  <section className="my-5">
+    <h3 className="text-center mb-4">Eligibility Criteria</h3>
+    <Card className="p-4 shadow-sm">
+      <ul>
+        <li>Minimum 2 years of professional experience.</li>
+        <li>Stable income source with proof.</li>
+        <li>Good credit history.</li>
+        <li>Valid professional qualification certificates.</li>
       </ul>
-    </div>
-  );
-};
+    </Card>
+  </section>
+);
 
 export default EligibilityCriteria;

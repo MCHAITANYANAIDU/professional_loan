@@ -1,0 +1,60 @@
+/* Scrolling text from right to left */
+.scrolling-text {
+  position: absolute;
+  bottom: 20px;
+  right: -100%;
+  animation: scrollText 10s linear infinite;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+@keyframes scrollText {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+/* Highlight round animation */
+.highlight-round {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 0, 0.5);
+  border-radius: 50%;
+  animation: evolveRound 3s ease-in-out infinite;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes evolveRound {
+  0% {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+  }
+  50% {
+    width: 120px;
+    height: 120px;
+    opacity: 1;
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+  }
+}
+
+.carousel-wrapper .carousel .slide img {
+    padding-top: 2rem;
+    height: 450px;
+    object-fit: cover;
+  }
+  
