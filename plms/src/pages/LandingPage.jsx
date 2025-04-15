@@ -17,28 +17,26 @@ const LandingPage = () => {
         </div>
       </header>
 
-      {/* Scrolling Quotes */}
       <div className="scrolling-banner">
-        <p>💼 Empower Your Career with Instant Loans &nbsp; | &nbsp; 🎯 Low-Interest EMI Options for Professionals &nbsp; | &nbsp; 🕒 Get Approved in 48 Hours &nbsp; | &nbsp; 🚀 Fuel Your Ambitions with Flexible Loans</p>
+        <p>💼 Empower Your Career | 🎯 Low-Interest EMI | 🕒 Get Approved Fast | 🚀 Fuel Ambitions</p>
       </div>
 
       <Carousel />
 
-      {/* Why Choose Us Section */}
       <section className="why-choose">
         <h2>Why Choose PLMS?</h2>
         <div className="features">
           <div className="feature-card">
             <h3>👨‍⚕️ Self-employed Professionals</h3>
-            <p>Special loan schemes for doctors, architects, CAs, and more.</p>
+            <p>Special loans for doctors, architects, CAs, and more.</p>
           </div>
           <div className="feature-card">
-            <h3>⚡ Quick Loan Processing</h3>
-            <p>Get approval within 48 hours with minimum documents.</p>
+            <h3>⚡ Quick Processing</h3>
+            <p>Approval in 48 hours with minimal paperwork.</p>
           </div>
           <div className="feature-card">
             <h3>🔄 Flexible Tenure</h3>
-            <p>Choose loan tenure up to 7 years with low interest.</p>
+            <p>Tenure up to 7 years with competitive rates.</p>
           </div>
         </div>
       </section>
@@ -48,16 +46,16 @@ const LandingPage = () => {
       <section className="faqs">
         <h2>FAQs</h2>
         <div className="faq-item">
-          <h4>📌 What documents are required?</h4>
-          <p>Basic KYC, income proof, and professional license (if applicable).</p>
+          <h4>📌 Required Documents?</h4>
+          <p>KYC, income proof, and license (if applicable).</p>
         </div>
         <div className="faq-item">
-          <h4>📌 Can I repay early?</h4>
-          <p>Yes, prepayment is allowed with minimal or no charges.</p>
+          <h4>📌 Early Repayment?</h4>
+          <p>Yes, with minimal or no fees.</p>
         </div>
         <div className="faq-item">
-          <h4>📌 Is collateral needed?</h4>
-          <p>No, most of our professional loans are unsecured.</p>
+          <h4>📌 Need Collateral?</h4>
+          <p>No, most loans are unsecured.</p>
         </div>
       </section>
 

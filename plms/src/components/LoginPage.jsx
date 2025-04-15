@@ -10,6 +10,7 @@ const LoginPage = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
     try {
       const res = await axios.post('http://localhost:8732/api/users/login', {
         email,
@@ -17,6 +18,9 @@ const LoginPage = () => {
       });
 
       const { role } = res.data;
+
+      localStorage.setItem('plms_user', JSON.stringify(res.data));
+
       if (role === 'admin') navigate('/admin-dashboard');
       else navigate('/user-dashboard');
     } catch (err) {
@@ -25,11 +29,23 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+      <form onSubmit={handleLogin} className="login-form">
+        <input
+          type="email"
+          placeholder="Email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
         <button type="submit">Login</button>
       </form>
     </div>
