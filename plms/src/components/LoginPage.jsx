@@ -1,4 +1,3 @@
-// src/components/LoginPage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -18,13 +17,12 @@ const LoginPage = () => {
       });
 
       const { role } = res.data;
-
       localStorage.setItem('plms_user', JSON.stringify(res.data));
 
-      if (role === 'admin') navigate('/admin-dashboard');
-      else navigate('/user-dashboard');
+      if (role === 'admin') navigate('/admin-dashboard', { replace: true });
+      else navigate('/user-dashboard', { replace: true });
     } catch (err) {
-      alert("Login failed! 🚫 Invalid credentials.");
+      alert('Login failed! 🚫 Invalid credentials.');
     }
   };
 
